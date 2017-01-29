@@ -1,7 +1,11 @@
-export default function DumberComponent(props){
+const React = require('react');
+
+const DumberComponent = (props) => {
   return (
-    <div onClick={this.props.handleClick}>
-      I am just happy
+    <div onClick={props.handleClick}>
+      I am just happy.
     </div>
   );
 }
+
+module.exports = DumberComponent;
